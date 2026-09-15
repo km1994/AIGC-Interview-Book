@@ -1,0 +1,169 @@
+# DeepSeek-R1 面试常考题
+
+- [DeepSeek-R1 面试常考题](#deepseek-r1-面试常考题)
+  - [GRPO（Group Relative Policy Optimization）常见面试题汇总篇](#grpogroup-relative-policy-optimization常见面试题汇总篇)
+  - [DeepSeek-R1 DeepSeek-R1-Zero 常见面试题汇总篇](#deepseek-r1-deepseek-r1-zero-常见面试题汇总篇)
+  - [DeepSeek-R1 百问百搭-DeepSeek-R1 常见面试题汇总篇](#deepseek-r1-百问百搭-deepseek-r1-常见面试题汇总篇)
+  - [DeepSeek-R1 论文解读篇](#deepseek-r1-论文解读篇)
+
+## GRPO（Group Relative Policy Optimization）常见面试题汇总篇
+
+- [GRPO（Group Relative Policy Optimization）篇](https://articles.zsxq.com/id_eh0ee91au5t4.html)  :fire:
+  - GRPO（Group Relative Policy Optimization）算法的设计原理是什么？
+  - GRPO（Group Relative Policy Optimization）算法与传统RL方法有何不同？
+  - GRPO算法如何估计基线（baseline）？与PPO的区别？
+  - GRPO算法估计基线（baseline）与PPO的区别？
+  - 为何选择GRPO而非其他RL算法（如A3C、TRPO）？
+  - GRPO 训练中的“组内归一化”（group normalization）对收敛速度的影响？
+- [答案](https://articles.zsxq.com/id_eh0ee91au5t4.html) 
+
+## DeepSeek-R1 DeepSeek-R1-Zero 常见面试题汇总篇
+
+- [DeepSeek-R1-Zero 篇](https://articles.zsxq.com/id_f8gqnqzxhx0n.html)  :fire:
+  - DeepSeek-R1-Zero 的基础模型是什么?
+  - DeepSeek-R1-Zero 如何通过纯强化学习（RL）实现推理能力的突破？
+  - DeepSeek-R1-Zero 如何使用 GRPO？
+  - DeepSeek-R1-Zero 采用纯RL训练 优势？
+  - 为何强调“无监督微调”（SFT）的RL训练？
+  - DeepSeek-R1-Zero  “无监督微调”（SFT）的RL训练的理论依据是什么？
+  - DeepSeek-R1-Zero 模型在自我进化过程中是否会出现“局部最优”？
+  - DeepSeek-R1-Zero 模型在自我进化过程中如何避免“局部最优”？
+  - DeepSeek-R1-Zero的“自我进化”（self-evolution）过程如何通过RL实现？
+  - DeepSeek-R1-Zero的“自我进化”（self-evolution）过程如何实现 RL 有哪些技术支持？
+  - 如何验证RL训练过程中模型的“进化”是全局而非局部优化？
+  - 训练模板中与标签的设计目标是什么？
+  - 模型的可解释性（interpretability）如何提升？
+  - 训练模板中与标签的技术实现是什么？
+  - 奖励模型中“格式奖励”与“准确性奖励”如何进行 权重分配？
+  - 奖励模型中“格式奖励”与“准确性奖励”出现冲突时，如何处理？
+  - 模型在RL训练中的探索（exploration）与利用（exploitation）策略如何设计？
+  - 多任务数据（如写作、事实问答）如何整合到训练中？
+  - 模型如何处理不确定性问题（如模糊查询）？
+  - DeepSeek-R1-Zero在RL训练过程中，AIME分数从15.6%提升到71%的关键因素是什么？
+- [DeepSeek-R1-Zero 篇答案](https://articles.zsxq.com/id_f8gqnqzxhx0n.html) 
+
+## DeepSeek-R1 百问百搭-DeepSeek-R1 常见面试题汇总篇
+
+- [DeepSeek-R1 百问百搭-DeepSeek-R1篇](https://articles.zsxq.com/id_tnkh7vh7jvw1.html) :fire:
+  - 冷启动数据（cold-start data）篇
+    - DeepSeek-R1 为什么要引入 冷启动数据（cold-start data）？
+    - DeepSeek-R1 冷启动数据（cold-start data）思路？
+  - 如何将长思维链（CoT）能力扩展到非STEM领域（如法律、艺术）？
+    - DeepSeek-R1 冷启动数据（cold-start data）核心优势是什么？
+    - 冷启动数据规模仅为数千条，如何保证训练效果？
+    - 冷启动数据如何构造？
+    - 冷启动数据人工标注与格式过滤的必要性？
+    - 冷启动数据中的“总结”（summary）模块如何提升可读性？
+    - 为何在蒸馏过程中仅使用SFT而非RL？
+    - 训练中的KL散度约束（β参数）如何影响模型输出？
+    - 长思维链（long CoT）生成的技术挑战是什么？
+    - 长思维链（long CoT）生成的技术挑战对应解决方法？
+  - 蒸馏技术篇
+    - 蒸馏技术的核心目标是什么？
+    - 为何小模型通过蒸馏能超越直接RL训练？
+    - 为何蒸馏技术选择Qwen和Llama作为基模型？
+    - Qwen和Llama作为基模型，其架构适配性如何？
+    - 蒸馏模型的性能为何能超越同类开源模型（如QwQ-32B-Preview）？
+    - 蒸馏模型的训练数据规模与基模型的关系？
+    - 不同基模型（如Qwen与Llama）的蒸馏效果差异？
+    - 不同基模型（如Qwen与Llama）的蒸馏如何选择？
+    - 蒸馏过程中是否存在知识损失？如何量化？
+    - 蒸馏过程中知识损失如何量化？
+  - 推理导向的强化学习阶段篇
+    - 论文提到“语言混合”（language mixing）问题，具体表现和解决思路是什么？
+    - 训练数据中的多语言样本如何处理？
+    - 模型在低资源语言中的表现是否受限？
+    - 模型在多语言混合输入下的表现如何？
+    - 模型在多语言混合输入下的优化措施？
+    - 语言混合问题的根本原因是否与多语言训练数据相关？
+    - 语言混合问题的未来优化方向是什么？
+    - 多语言对齐的技术难点何在？
+    - 为何在DeepSeek-R1中引入“语言一致性奖励”？
+    - DeepSeek-R1引入“语言一致性奖励”数学实现方式是什么？
+    - DeepSeek-R1引入“语言一致性奖励” 效果 怎么样？
+    - 什么是 “奖励破解”（reward hacking）问题？
+    - 模型如何避免生成重复或无意义内容？
+    - 如何解决RL训练中的“奖励破解”（reward hacking）问题？
+    - 为何在第二阶段RL中引入“多样性提示分布”？
+    - 如何在第二阶段RL中引入“多样性提示分布”？
+    - 在第二阶段RL中引入“多样性提示分布” 效果怎么样？
+    - DeepSeek-R1 模型如何通过“反思”（reflection）行为优化推理路径？
+    - DeepSeek-R1 模型“反思”（reflection）行为优化推理路径技术支持？
+    - 语言混合问题如何通过奖励信号抑制？
+    - 如何通过RL引导模型生成结构化输出（如代码块）？
+    - 过程奖励模型（PRM）为何在实验中失败？其局限性是什么？
+    - 蒙特卡洛树搜索（MCTS）在语言模型中的挑战是什么？与AlphaGo的区别何在？
+    - 如何避免模型在RL训练中过度拟合评测任务？
+  - 拒绝采样和监督微调阶段篇
+    - 拒绝采样（rejection sampling）在SFT阶段的作用是什么？
+    - 拒绝采样（rejection sampling）如何筛选高质量数据？
+    - DeepSeek-R1 模型在训练过程中如何动态调整温度（temperature）参数？
+    - 不同温度（temperature）参数对生成多样性的影响？
+  - 全场景强化学习阶段
+    - 为何在最终阶段引入“无害性”（harmlessness）奖励？
+    - 在最终阶段引入“无害性”（harmlessness）奖励实现方式？
+    - 模型在伦理对齐（ethical alignment）方面的表现如何？
+    - 用户提示（prompt）敏感性是否影响模型鲁棒性？
+    - 如何解决用户提示（prompt）敏感性影响模型鲁棒性问题？
+    - 模型安全（safety）与隐私保护的技术路线是什么？
+  - 论文细节篇
+    - 多阶段RL训练（两阶段RL+两阶段SFT）的协同效应如何提升模型性能？
+    - 多数投票（majority voting）如何提升模型稳定性？
+    - 多数投票（majority voting）如何进一步提升模型性能？其背后的统计学原理是什么？
+    - DeepSeek-R1 论文中提到的“aha moment”具体指什么？
+    - “aha moment” 对 DeepSeek-R1 模型训练有何启示？
+    - 如何解释模型在“aha moment”中表现出的类人推理行为？
+    - 训练数据中的噪声如何影响最终性能？
+    - 训练数据中的噪声应对策略？
+  - DeepSeek-R1 评测篇
+    - DeepSeek-R1在中文任务中的表现为何低于英文？
+    - 如何 优化 DeepSeek-R1 在中文任务中的表现为何低于英文问题？
+    - DeepSeek-R1 模型在长文本生成中的优势如何量化？
+    - 长上下文任务中 DeepSeek-R1 模型的注意力机制如何优化？
+    - 为何选择AIME 2024作为核心评测任务？
+    - AIME 2024和MATH-500的评测指标如何定义？为何选择这些任务？
+    - 为何选择 AIME 2024和MATH-500 作为评测指标？
+    - 在知识类任务（如MMLU、GPQA）中，DeepSeek-R1如何超越基模型DeepSeek-V3？
+    - 长上下文理解任务（如FRAMES）的评测结果揭示了模型的哪些能力？
+    - 评测中的“Pass@1”与“Cons@64”指标有何区别？
+    - 模型在代码竞赛（Codeforces）中的评分如何转化为“击败人类百分比”？
+    - 为何在AlpacaEval 2.0中控制生成长度？如何避免长度偏差？
+    - 模型在中文任务（如C-Eval）中的表现是否受语言对齐影响？
+    - SWE-bench评测中的“Resolved”指标如何定义？
+    - 模型在开放式生成任务（如创意写作）中的评测方法是什么？
+    - 为何DeepSeek-R1在软件工程任务中提升有限？
+    - 软件工程任务（如SWE-bench）的RL训练效率问题如何改进？
+    - 评测中使用的“零样本”（zero-shot）与“少样本”（few-shot）设置差异？
+    - 评测中是否考虑模型的计算效率（如推理延迟）？
+    - 评测中是否考虑模型的计算效率（如推理延迟）？
+    - 模型在对抗性测试（adversarial testing）中的鲁棒性如何？
+    - 模型针对在对抗性测试（adversarial testing）中的鲁棒性的改进策略？
+    - 评测中的“预期评分”（Elo rating）如何计算？
+    - DeepSeek-R1 模型在逻辑推理任务中的失败案例分析？
+    - DeepSeek-R1 模型在逻辑推理任务中的失败案例如何改进？
+    - 评测数据的时间范围（如LiveCodeBench 2024-2025）是否影响结果？
+  - DeepSeek-R1 推理部署篇
+    - DeepSeek-R1 模型在生成过程中如何平衡“创造性”与“准确性”？
+    - 为何在推理任务中强调“规则化奖励”而非神经奖励模型？
+    - DeepSeek-R1的模型参数量如何影响推理速度？
+    - 模型在生成长文本时如何管理内存与计算资源？
+    - 模型在实际部署中的计算资源需求如何？
+    - 模型在实际部署中的计算资源优化策略？
+    - 介绍 DeepSeek-R1 模型在生成过程中的“自我验证”机制？
+    - DeepSeek-R1 模型在生成过程中的“自我验证”机制如何实现？
+  - DeepSeek-R1 其他问题篇
+    - DeepSeek-R1的开源策略对研究社区有何影响？
+    - 开源模型是否包含完整的训练代码与数据集？
+    - 未来如何平衡模型性能与能耗（如碳足迹）？
+    - 社区反馈如何影响DeepSeek-R1的迭代方向？
+    - DeepSeek-R1在通用能力（如多轮对话、JSON输出）上的短板如何解决？
+    - 未来是否会探索更大规模的基模型（如千亿参数）？
+    - 模型在实时交互场景（如对话系统）中的优化方向？
+    - 如何通过联邦学习（federated learning）提升数据多样性？
+    - 未来是否会发布多模态版本的DeepSeek-R1？
+    - 研究团队对AGI（通用人工智能）的长期愿景是什么？
+- [DeepSeek-R1篇答案](https://articles.zsxq.com/id_tnkh7vh7jvw1.html) 
+
+## DeepSeek-R1 论文解读篇
+
+- [DeepSeek-R1 论文解读](https://articles.zsxq.com/id_o4r4cpl8cqzm.html)  :fire:
