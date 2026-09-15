@@ -19,9 +19,9 @@
 - Strong-to-Weak Distillation
 - 后训练效果评估
 
-## [三十六、大模型—— 上下文工程 Context Engineering 篇](https://articles.zsxq.com/id_cunj1wwoejxe.html) :fire:
+## [三十六、大模型—— 上下文工程 Context Engineering 篇](https://github.com/km1994/AIGC-Interview-Book/tree/main/36_ContextEngineering) :fire:
 
-- [上下文工程 Context Engineering：一文读懂重塑大模型智能系统的技术革命](https://articles.zsxq.com/id_cunj1wwoejxe.html)
+- [上下文工程 Context Engineering：一文读懂重塑大模型智能系统的技术革命](https://github.com/km1994/AIGC-Interview-Book/tree/main/36_ContextEngineering)
   - 引言
   - 一、重新定义 Agent 数据流：Context is All You Need
     - 1.1 Prompt Engineering - the Art of Instructions
@@ -56,9 +56,9 @@
     - 4.4 框架与工具
   - 五、Context Engineering 的未来
 
-## [三十五、大模型—— MCP 百问百搭 篇](https://articles.zsxq.com/id_qixbm7loips9.html) :fire:
+## [三十五、大模型—— MCP 百问百搭 篇](https://github.com/km1994/AIGC-Interview-Book/tree/main/34_mcp) :fire:
 
-- [Function Call 面试常考题篇](https://articles.zsxq.com/id_vpl48kamx4j8.html)
+- [Function Call 面试常考题篇](https://github.com/km1994/AIGC-Interview-Book/blob/main/34_mcp/FunctionCall.md)
   - 1 为什么需要 Function Call？
   - 2 什么是 Function Call？
   - 3 如何让 大模型 具备 Function call 能力？
@@ -76,15 +76,15 @@
   - 9 Function Call 工作原理？
   - 10 Function Call 存在什么问题？
 
-## [三十二、大模型——DeepSeek-R1 百问百搭 篇](https://articles.zsxq.com/id_qixbm7loips9.html) :fire:
+## [三十二、大模型——DeepSeek-R1 百问百搭 篇](https://github.com/km1994/AIGC-Interview-Book/tree/main/32_deepseek) :fire:
 
-- [GRPO（Group Relative Policy Optimization）篇](https://articles.zsxq.com/id_eh0ee91au5t4.html)  :fire:
-- [DeepSeek-R1-Zero 篇](https://articles.zsxq.com/id_f8gqnqzxhx0n.html)  :fire:
+- [GRPO（Group Relative Policy Optimization）篇](https://github.com/km1994/AIGC-Interview-Book/blob/main/32_deepseek/GRPO.md)  :fire:
+- [DeepSeek-R1-Zero 篇](https://github.com/km1994/AIGC-Interview-Book/blob/main/32_deepseek/dp-r1-zero.md)  :fire:
 - [DeepSeek-R1 百问百搭-DeepSeek-R1篇](https://articles.zsxq.com/id_tnkh7vh7jvw1.html) :fire:
-- [千面郎君 篇（三十二章）—— DeepSeek-R1 论文解读](https://articles.zsxq.com/id_o4r4cpl8cqzm.html)  :fire:
-- [DeepSeek-R1 篇——如何通过强化学习实现复杂推理](https://articles.zsxq.com/id_6w5tdozaf2pn.html)
+- [千面郎君 篇（三十二章）—— DeepSeek-R1 论文解读](hhttps://github.com/km1994/AIGC-Interview-Book/blob/main/32_deepseek/paper.md)  :fire:
+- [DeepSeek-R1 篇——如何通过强化学习实现复杂推理](https://github.com/km1994/AIGC-Interview-Book/blob/main/32_deepseek/dp-r1.md)
 
-## 三十三、[大模型——推理大模型面](https://articles.zsxq.com/id_ofc8lbfxntit.html) :fire:
+## 三十三、[大模型——推理大模型面](https://github.com/km1994/AIGC-Interview-Book/tree/main/33_%E6%8E%A8%E7%90%86%E5%A4%A7%E6%A8%A1%E5%9E%8B) :fire:
 
 - 一、什么是思维链？
 - 二、什么是推理大模型？
@@ -100,11 +100,11 @@
 - 八、推理大模型和普通大模型的简单对比？
 - 九、推理大模型的提示词（prompt）如何写？
 
-[点击查看答案](https://articles.zsxq.com/id_ofc8lbfxntit.html)
+[点击查看答案](https://github.com/km1994/AIGC-Interview-Book/tree/main/33_%E6%8E%A8%E7%90%86%E5%A4%A7%E6%A8%A1%E5%9E%8B)
 
 ## 三十一、大模型——Chat o1 篇 :fire:
 
-### [千面郎君 篇（三十一章）—— OpenAI o1 篇](https://articles.zsxq.com/id_71rmw7acx3cd.html)
+### [千面郎君 篇（三十一章）—— OpenAI o1 篇](https://github.com/km1994/AIGC-Interview-Book/tree/main/31_chat_o1)
 
 - 千面郎君 篇（三十一章）—— OpenAI o1 篇
   - 一、Shortcut learning (捷径学习) vs Journey learning (旅程学习)
@@ -144,7 +144,7 @@
     - 6.2 第二阶段：直接偏好学习（DPO）
   - 七、什么是人类和 AI 协同标注的有效策略？
 
-- [点击查看答案](https://articles.zsxq.com/id_71rmw7acx3cd.html)
+- [点击查看答案](https://github.com/km1994/AIGC-Interview-Book/tree/main/31_chat_o1)
 
 ### [OpenAI o1 面试篇](https://articles.zsxq.com/id_032nwgcgwhc6.html)
 
