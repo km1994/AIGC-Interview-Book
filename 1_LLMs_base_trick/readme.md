@@ -1,18 +1,18 @@
 # 大模型（LLMs）基础面
 
-- [大模型（LLMs）基础面](#大模型llms基础面)
-  - [1 目前 主流的开源模型体系 有哪些？](#1-目前-主流的开源模型体系-有哪些)
-  - [2 prefix Decoder 和 causal Decoder 和 Encoder-Decoder 区别是什么？](#2-prefix-decoder-和-causal-decoder-和-encoder-decoder-区别是什么)
-  - [3 大模型LLM的 训练目标 是什么？](#3-大模型llm的-训练目标-是什么)
-  - [4 涌现能力是啥原因？](#4-涌现能力是啥原因)
-  - [5 为何现在的大模型大部分是Decoder only结构？](#5-为何现在的大模型大部分是decoder-only结构)
-  - [6 简单 介绍一下 大模型【LLMs】？](#6-简单-介绍一下-大模型llms)
-  - [7 大模型【LLMs】后面跟的 175B、60B、540B等 指什么？](#7-大模型llms后面跟的-175b60b540b等-指什么)
-  - [8 大模型【LLMs】具有什么优点？](#8-大模型llms具有什么优点)
-  - [9 大模型【LLMs】具有什么缺点？](#9-大模型llms具有什么缺点)
-  - [10 encoder-only, decoder-only, encoder-decoder的区别?](#10-encoder-only-decoder-only-encoder-decoder的区别)
-  - [11 BART、llama、gpt、t5、palm等主流模型异同点?](#11-bartllamagptt5palm等主流模型异同点)
-  - [12 prefix LM 和 causal LM 区别是什么?](#12-prefix-lm-和-causal-lm-区别是什么)
+- [大模型（LLMs）基础面](https://github.com/km1994/aigc_Interview)
+  - [1 目前 主流的开源模型体系 有哪些？](https://github.com/km1994/aigc_Interview)
+  - [2 prefix Decoder 和 causal Decoder 和 Encoder-Decoder 区别是什么？](https://github.com/km1994/aigc_Interview)
+  - [3 大模型LLM的 训练目标 是什么？](https://github.com/km1994/aigc_Interview)
+  - [4 涌现能力是啥原因？](https://github.com/km1994/aigc_Interview)
+  - [5 为何现在的大模型大部分是Decoder only结构？](https://github.com/km1994/aigc_Interview)
+  - [6 简单 介绍一下 大模型【LLMs】？](https://github.com/km1994/aigc_Interview)
+  - [7 大模型【LLMs】后面跟的 175B、60B、540B等 指什么？](https://github.com/km1994/aigc_Interview)
+  - [8 大模型【LLMs】具有什么优点？](https://github.com/km1994/aigc_Interview)
+  - [9 大模型【LLMs】具有什么缺点？](https://github.com/km1994/aigc_Interview)
+  - [10 encoder-only, decoder-only, encoder-decoder的区别?](https://github.com/km1994/aigc_Interview)
+  - [11 BART、llama、gpt、t5、palm等主流模型异同点?](https://github.com/km1994/aigc_Interview)
+  - [12 prefix LM 和 causal LM 区别是什么?](https://github.com/km1994/aigc_Interview)
 
 ## 1 目前 主流的开源模型体系 有哪些？
 

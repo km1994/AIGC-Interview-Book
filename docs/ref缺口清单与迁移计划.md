@@ -213,4 +213,120 @@ grep -n "^## " docs/classic_question_bank.md
 
 ---
 
-*生成时间：2026-09-29 ｜ 数据来源：本地 git 工作副本 ｜ 核验方式：文件行数统计 + 关键词覆盖探测*
+## 9. 执行记录
+
+### P0 批次（已完成，2026-09-29）
+
+| 序 | 目标 | 产出文件 | 题量 | 状态 |
+|---|---|---|---|---|
+| P0-1 | 多模态强化 | `26_Multimodal/readme.md`（重写） | **72 题**（原 6 题） | ✅ |
+| P0-2 | 模型部署与推理工程 | `37_Model_Deploy/readme.md`（新建） | **53 题** | ✅ |
+| P0-3 | 大模型评测 | `9_LLMs_eval_trick/readme.md`（重写） | **44 题**（原 8 题） | ✅ |
+| P0-4 | 深度学习基础 | `38_DL_Base/readme.md`（新建） | **44 题** | ✅ |
+| — | 索引更新 | `docs/classic_question_bank.md`：新增第 38、39 专题；第 9、26 专题题单由脚本从文件目录自动生成；一览表 37 → 39 个 | — | ✅ |
+| — | 主页更新 | `README.md`：目录导航 +4 行、徽章 800+ → 1000+、更新计划 | — | ✅ |
+
+**P0 合计新增 213 题**。验收标准全部达成：关联模块题量均达 ≥8 题——ONNX/TensorRT 8 题、模型压缩 8 题、端侧边云 8 题。
+
+### 排版风格（二稿已调整）
+
+初稿误用了 `docs/` 下的题库题单式排版（`- **考察点** / - **得分项** / - **回答**`），与文件所在的**专题目录**风格不符。二稿改为对齐 `5_LLMs_RAG`、`34_mcp`、`29_KV_Cache` 的**专题讲解式**：
+
+- 开头一段锚点目录，层级为「一、大主题 → 1.1 具体问题」
+- 正文用 `##`（大主题）+ `###`（问题）两级标题，标题直接就是面试问法
+- 讲解段落 2 到 5 句，去掉「N 个要点」式枚举与总结金句
+- 删掉自定义的「原创性声明」「本页与相邻模块的边界」表，只保留仓库通用的一节「致谢」
+
+### 合规自检结果（二稿）
+
+对 4 个文件与源仓库全文（490 万字符）做四层查重：
+
+| 检测层 | 一稿 | 二稿 |
+|---|---|---|
+| 长句完全重合（≥25 字） | 0 / 1459（0.000%） | **0 / 1116（0.000%）** |
+| 10 字 shingle 重合率 | 0.242% ~ 0.569% | 0.095% ~ 0.268% |
+| 15 字 shingle 重合率 | 0.006% ~ 0.106% | **0.000% ~ 0.017%** |
+| 20 字 shingle 重合率 | 0.000% ~ 0.022% | **全部 0.000%** |
+| 题目标题重合 | 5 条 | **0 / 213（0.00%）** |
+
+二稿把**题目标题也重新生成**了一遍，所以连"考点标题"层面的重合都清零了。自检脚本（可重跑）：`.workbuddy/check_dup.py`；索引同步脚本：`.workbuddy/sync_index.py`。
+
+### 下一步（P1 批次）
+
+按计划推进生成式视觉与具身智能：`39_Diffusion_Image` → `40_Video_Gen` → `41_Digital_Human` → `42_Embodied`。新批次一律按二稿的专题讲解式写。
+
+---
+
+## 10. 面经批次（已完成，2026-09-29）
+
+### 新增来源
+
+原先只用了 `WeThinkIn/AIGC-Interview-Book` 一个源。本批次把来源扩展到面经与聚合清单：
+
+| 来源 | 位置 | 性质 |
+|---|---|---|
+| DolbyUUU/Awesome-LLM-Interview-Questions-and-Answers | `ref/Awesome-LLM-Interview-Questions-and-Answers/`（原有）+ `ref/面经汇总_2026/repos/`（新克隆） | 考点清单（答案在站外） |
+| 知乎《Agent 面经》（p/2001762598350247368） | 已存档为来源索引 | 链接聚合页，汇总 30+ 面经来源 |
+| 知乎《[面经记录] LLM+RL 50 问》 | `ref/面经汇总_2026/zhihu/01_*.md` | 50 道 RL 深度题 |
+| 知乎《怎么成为一个 AI Agent 工程师？》 | `ref/面经汇总_2026/zhihu/02_*.md` | Agent 工程方法论 + 面试真题 |
+| 知乎《2026 大模型智能体(Agent)面试全攻略》 | `ref/面经汇总_2026/zhihu/03_*.md` | Agent / Agentic RAG / 多模态 20 题 |
+| 知乎《大模型应用算法社招经历分享》 | `ref/面经汇总_2026/zhihu/04_*.md` | 社招考点优先级 + 手撕题公司分布 |
+
+抓取脚本与来源清单：`ref/面经汇总_2026/fetch_facebooks.sh`、`ref/面经汇总_2026/README.md`、`ref/面经汇总_2026/zhihu/README.md`。
+
+### 资料拉取结果
+
+| 仓库 | md | 行数 | 状态 |
+|---|---|---|---|
+| `hello-agents` | 242 | 92,188 | ✅ |
+| `LLMForEverybody` | 421 | 46,730 | ✅ |
+| `AgentGuide` | 156 | 71,865 | ✅ |
+| `Awesome-LLM-Interview-Questions-and-Answers` | 1 | 242 | ✅ |
+| `Leoooow/interview_collect` | — | — | ❌ **404，仓库已失效** |
+
+体积约 709MB（主要是图片）。脚本已加 `GIT_TERMINAL_PROMPT=0`，遇到失效仓库直接跳过并记录，不会再卡在凭据提示上。
+
+### 最有价值的两块料
+
+1. **`hello-agents/Extra-Chapter/`** — `Extra01-面试问题总结.md`（8 类问题清单）+ `Extra01-参考答案.md`（51 万字答案）、`Extra09-踩坑经验`、`Extra12-后训练实战`、`Extra10-Agent自进化`、`Extra11-WebAgent`、`Extra06-GUIAgent`
+2. **`AgentGuide/docs/04-interview/`** — 独立面试目录，`23-frontier-interview-guides/`（含 **image-generation**、agentic-rl、project-deep-dive、ai-infra、coding-agent、self-evolving-agents）+ `18-agent-interview-playbooks/`（memory 668 行 / claude-code-source 583 / hermes 534 / evaluation 448 / harness 424 / skills 408 等）
+
+### 重叠度扫描
+
+用 15-gram 把 27 份新资料与本仓库全部已有内容（78.8 万字）比对，**重叠率均为 0.00% ~ 0.02%**——纯新增，无重复搬运风险。原先担心的 Hermes / Harness / Agent 记忆撞车，在文本层面并未发生。
+
+扫描脚本：`.workbuddy/scan_overlap.py`。
+
+### 产出
+
+| 序 | 目标 | 产出文件 | 题量 |
+|---|---|---|---|
+| — | 项目经验与落地复盘 | `39_Project_Experience/readme.md`（新建，第 40 专题） | **29 题** |
+| — | 开源框架对比与选型 | `40_OpenSource_Frameworks/readme.md`（新建，第 41 专题） | **25 题** |
+
+索引同步：`classic_question_bank.md` 新增第四十、四十一专题，一览表 39 → 41；`README.md` 目录导航 +2 行、更新计划同步。
+
+### 自查结果（6 个文件 × 3 个来源，492 万字符）
+
+| 检测层 | 结果 |
+|---|---|
+| 长句完全重合（≥25 字） | **0 / 1359（0.000%）** |
+| 15 字 shingle | 0.000% ~ 0.017% |
+| 20 字 shingle | **全部 0.000%** |
+| 题目标题重合 | **0 / 267（0.00%）** |
+
+### 已归档但尚未吸收的考点（下一批可用）
+
+- **RL 训练工程**：DAPO / GSPO / Dr.GRPO / λ-GRPO / REINFORCE++ 的改进点；GRPO 显存里有几个模型；on-policy / off-policy 判定；clip 后取 min 的原因；entropy collapse；reward 上升但验证下降；训推不一致与重要性采样校正
+- **Agentic RAG 与多模态文档问答**：RAG 权限对齐（ACL 元数据 + 检索期 Filter 注入）、Chunk 冲突仲裁、知识库高频更新的动态路由、布局感知解析、查询扩展、Self-RAG 双问验证、表格摘要索引、图片占位符回显、跨页图文关联
+- **Agent 工程细节**：State Schema / Trim Strategy / Summary Buffer、条件边与循环、Orchestrator-Workers 粒度、Reflexion 失败轨迹、Agent 影子测试
+- **大模型基础补漏**：LoRA 初始化与 LoRA-GA / LoRA-Pro、多轮对话只算最后一轮的损失口径、Decoder-only 的四个优势、small2big 与反向 HyDE、BM25 的 TF-IDF 解释、Embedding 的 InfoNCE + CoSENT 混合损失、MRL 动态维度
+
+### 批次顺序调整
+
+原 P1（生成式视觉 + 具身）顺延。新目录编号让位给本项目批次，因此：
+`41_Diffusion_Image` → `42_Video_Gen` → `43_Digital_Human` → `44_Embodied`。
+
+---
+
+*生成时间：2026-09-29 ｜ 数据来源：本地 git 工作副本 + 线上面经仓库 ｜ 核验方式：文件行数统计 + 关键词覆盖探测 + 四层查重自检*

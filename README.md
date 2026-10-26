@@ -2,19 +2,19 @@
 
 # 大模型面试宝典
 
-**AIGC / 大模型 / AI Agent 算法岗 · 800+ 高频面试考点**
+**AIGC / 大模型 / AI Agent 算法岗 · 1000+ 高频面试考点**
 
-> RAG 160 · Agent 100 · RL 后训练 120 · Hermes Agent 100 · GraphRAG 100 · Loop Engineering 100 · 目标检测 100 · 经典专题 30+
+> RAG 160 · Agent 100 · RL 后训练 120 · Hermes Agent 100 · GraphRAG 100 · Loop Engineering 100 · 目标检测 100 · 模型部署 53 · 深度学习 44 · 多模态 72 · 大模型评测 44 · 项目经验 29 · 框架选型 25 · 经典专题 41
 
 [![Stars](https://img.shields.io/github/stars/km1994/AIGC-Interview-Book?style=social)](https://github.com/km1994/AIGC-Interview-Book/stargazers)
 [![Forks](https://img.shields.io/github/forks/km1994/AIGC-Interview-Book?style=social)](https://github.com/km1994/AIGC-Interview-Book/network/members)
 [![Last Commit](https://img.shields.io/github/last-commit/km1994/AIGC-Interview-Book)](https://github.com/km1994/AIGC-Interview-Book/commits/main)
-[![考点](https://img.shields.io/badge/%E8%80%83%E7%82%B9-800%2B-blue)](docs/classic_question_bank.md)
+[![考点](https://img.shields.io/badge/%E8%80%83%E7%82%B9-1000%2B-blue)](docs/classic_question_bank.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 </div>
 
----
+![](img/ScreenShot_2026-10-26_195511_602.png)
 
 ## 这是什么
 
@@ -57,19 +57,25 @@
 | Loop Engineering | **100** | 100 题作答要点 | [进入 →](docs/loop_engineering.md) |
 | 知识图谱 GraphRAG | **100** | 100 题作答要点 | [进入 →](docs/graphrag.md) |
 | 目标检测与机器视觉 | **100** | 100 题作答要点 | [进入 →](docs/cv_object_detection.md) |
-| **经典专题（30+）** | 数百考点 | 专题题单 + 逐专题答案入口 | [进入 →](docs/classic_question_bank.md) |
+| 模型部署与推理工程 | **53** | 逐题讲解：部署总览 / ONNX·TensorRT / 大模型推理机制 / 框架选型 / 模型压缩 / 调优 / 端侧边云 | [进入 →](37_Model_Deploy/readme.md) |
+| 深度学习基础 | **44** | 逐题讲解：基本概念 / 网络层 / 序列与图 / 训练优化 / 框架工程 / 调试评估 | [进入 →](38_DL_Base/readme.md) |
+| 多模态常见面试篇 | **72** | 逐题讲解：多模态基础 / 编码器 / 映射器 / 生成器 / 基石模型 / 系列拆解 / 落地 | [进入 →](26_Multimodal/readme.md) |
+| 大模型评测面 | **44** | 逐题讲解：评估体系 / 质量指标 / 幻觉 / 基准集 / RAG 闭环 / 安全 | [进入 →](9_LLMs_eval_trick/readme.md) |
+| 项目经验与落地复盘 | **29** | 逐题讲解：项目怎么讲 / 数据与训练细节 / 过拟合泛化幻觉 / 评测验收 / 落地难点 / 开放题框架 | [进入 →](39_Project_Experience/readme.md) |
+| 开源框架对比与选型 | **25** | 逐题讲解：框架全景 / 训练微调 / 后训练与 RL / Agent 框架 / 选型方法论 | [进入 →](40_OpenSource_Frameworks/readme.md) |
+| **经典专题（41）** | 数百考点 | 专题题单 + 逐专题答案入口 | [进入 →](docs/classic_question_bank.md) |
 
 <details>
 <summary><b>经典专题包含哪些方向？（点击展开）</b></summary>
 
-大模型基础面 · 进阶面 · 微调 · LangChain · RAG · PEFT · 推理 · 增量预训练 · 评测 · 强化学习 · 训练集 · 显存优化 · 分布式训练 · Agent · 位置编码 · Tokenizer · 推理加速 · 幻觉 · 模型对比 · CoT · 数据泄露 · MoE · 蒸馏 · 软硬件配置 · Token 与参数 · 多模态 · NLP · KV Cache · 角色扮演 · Chat o1 · DeepSeek-R1 · 推理大模型 · Kimi 1.5 · MCP · 上下文工程 · Qwen3
+大模型基础面 · 进阶面 · 微调 · LangChain · RAG · PEFT · 推理 · 增量预训练 · 评测 · 强化学习 · 训练集 · 显存优化 · 分布式训练 · Agent · 位置编码 · Tokenizer · 推理加速 · 幻觉 · 模型对比 · CoT · 数据泄露 · MoE · 蒸馏 · 软硬件配置 · Token 与参数 · 多模态 · NLP · KV Cache · 角色扮演 · Chat o1 · DeepSeek-R1 · 推理大模型 · Kimi 1.5 · MCP · 上下文工程 · Qwen3 · **模型部署与推理工程** · **深度学习基础** · **项目经验与落地复盘** · **开源框架对比与选型**
 
 每个专题都配了对应的答案目录，点进专题里的"点击查看答案"即可。
 
 </details>
 
 <details>
-<summary><b>已开源的逐题详解，直接看这里（126 题）</b></summary>
+<summary><b>已开源的逐题详解，直接看这里（300+ 题）</b></summary>
 
 | 详解文件 | 覆盖 |
 |---|---|
@@ -82,6 +88,12 @@
 | [DPO 深度解析](ql/s3_DPO/readme.md) | DPO 与 PPO 的取舍、损失函数推导 |
 | [Harness Engineering 基础](Harness/s1_harness_base/readme.md) | Agent = Model + Harness、路由/记忆/权限 |
 | [Harness 自进化核心](Harness/s2_harness_core/readme.md) | 技能自动生成、Nudge Engine、学习闭环 |
+| [模型部署与推理工程 53 题](37_Model_Deploy/readme.md) | ONNX/TensorRT、Prefill/Decode、PagedAttention、量化、调优、端侧边云 |
+| [深度学习基础 44 题](38_DL_Base/readme.md) | 卷积/归一化/残差、RNN→Transformer、GNN、优化器、NaN 排查 |
+| [多模态 72 题](26_Multimodal/readme.md) | 编码器/映射器/生成器五段链路、CLIP/BLIP/LLaVA、Qwen-VL/InternVL |
+| [大模型评测 44 题](9_LLMs_eval_trick/readme.md) | 评估矩阵、污染检测、LLM-as-Judge 偏差、长上下文、RAG 拆层评估 |
+| [项目经验与落地复盘 29 题](39_Project_Experience/readme.md) | 项目讲述结构、数据与训练细节拷打、通用能力退化、幻觉归因、落地难点 |
+| [开源框架对比与选型 25 题](40_OpenSource_Frameworks/readme.md) | Megatron/DeepSpeed、LLaMA-Factory/Unsloth、VeRL/OpenRLHF/AReaL、LangGraph/AutoGen |
 
 </details>
 
@@ -127,7 +139,20 @@
 | ✅ 已完成 | Loop Engineering / GraphRAG / 目标检测 各 100 题「考察点 + 得分项 + 作答要点」 |
 | ✅ 已完成 | RAG 进阶篇与实战篇（41-160 题）逐题详解补齐 |
 | ✅ 已完成 | Agent 工具系统、多 Agent 协作章节详解 |
-| 📌 计划中 | 面经投稿真实面试复盘、大厂题库整理、季度高频考点变化 |
+| ✅ 已完成 | **模型部署与推理工程 53 题**（第 38 专题） |
+| ✅ 已完成 | **深度学习基础 44 题**（第 39 专题） |
+| ✅ 已完成 | **多模态常见面试篇扩写至 72 题**（原 6 题） |
+| ✅ 已完成 | **大模型评测面扩写至 44 题**（原 8 题） |
+| ✅ 已完成 | **项目经验与落地复盘 29 题**（第 40 专题，新增） |
+| ✅ 已完成 | **开源框架对比与选型 25 题**（第 41 专题，新增） |
+| 📌 计划中 | 强化学习训练工程（RL 框架与显存、训推不一致、DAPO/GSPO、REINFORCE++） |
+| 📌 计划中 | Agentic RAG 与多模态文档问答（权限隔离、Chunk 冲突、图表回显） |
+| 📌 计划中 | AIGC 图像创作&AI 绘画基础（扩散模型 / SD·FLUX / ControlNet） |
+| 📌 计划中 | AI 视频基础、AI 数字人基础、具身智能与 VLA |
+| 📌 计划中 | 机器学习基础、数学与推导、经典模型（传统 CV）、数据结构与算法、计算机基础 |
+| 📌 计划中 | 大厂题库整理（按公司归档）、季度高频考点变化 |
+
+> 迁移路线与缺口分析见 [docs/ref缺口清单与迁移计划.md](docs/ref缺口清单与迁移计划.md)。
 
 > 大模型这行变化快，本仓库会持续跟。想第一时间拿到更新，可以关注公众号（见文末）。
 
@@ -153,6 +178,9 @@
 题库的完整答案、更新最快的部分，放在公众号和知识星球的《大模型面试宝典》专栏：
 
 - **公众号：关于NLP那些你不知道的事** —— 回复「**大模型**」领取高频考点 PDF
+
+![](img/ScreenShot_2026-10-26_195511_602.png)
+
 - **知识星球「大模型面试宝典」** —— 实战篇 / 场景题的完整解析与更新
 
 <div align="center">

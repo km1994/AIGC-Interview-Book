@@ -61,12 +61,10 @@ Deep Norm可以缓解爆炸式模型更新的问题，把模型更新限制在�
 1. Post LN：
    1. 位置：layer norm在残差链接之后
    2. 缺点：Post LN 在深层的梯度范式逐渐增大，导致使用post-LN的深层transformer容易出现训练不稳定的问题
-
 2. Pre-LN：
    1. 位置：layer norm在残差链接中
    2. 优点：相比于Post-LN，Pre LN 在深层的梯度范式近似相等，所以使用Pre-LN的深层transformer训练更稳定，可以缓解训练不稳定问题
    3. 缺点：相比于Post-LN，Pre-LN的模型效果略差
-
 3. Sandwich-LN：
    1. 位置：在pre-LN的基础上，额外插入了一个layer norm
    2. 优点：Cogview用来避免值爆炸的问题
